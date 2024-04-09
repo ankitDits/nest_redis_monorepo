@@ -1,0 +1,49 @@
+version: "3.7"
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:6.0.3
+    restart: always
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis:latest
+    restart: always
+    command: --port 6379
+    ports:
+      - "6379:6379"
+    expose:
+      - "6379"
+
+  # api-gateway:
+  #   ports:
+  #     - "0.0.0.0:3000:3000"
+  #   container_name: api-gateway
+  #   restart: always
+  #   build: ./packages/api-gateway
+  #   environment:
+  #     MONGO_URI: mongodb://mongo:27017/nestMicro
+  #     NATS_URI: redis://redis:6379
+
+  # user:
+  #   container_name: user
+  #   restart: always
+  #   build: ./packages/user
+  #   environment:
+  #     MONGO_URI: mongodb://mongo:27017/nestMicro
+  #     NATS_URI: redis://redis:6379
+
+  # course:
+  #   container_name: course
+  #   restart: always
+  #   build: ./packages/course
+  #   environment:
+  #     MONGO_URI: mongodb://mongo:27017/nestMicro
+  #     NATS_URI: redis://redis:6379
+volumes:
+  mongo-data: {}
