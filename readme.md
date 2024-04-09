@@ -3,7 +3,7 @@
 Example code for nestjs microservice using REDIS
 
 > Looking for Microservices using redis?
-*** https://github.com/itsmebhavin/nestjs-microservices-gRPC-example.git
+*** https://github.com/ankitDits/nest_redis_monorepo.git
 
 ## Description
 
