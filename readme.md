@@ -23,4 +23,4 @@ I have created microservices using nestjs and REDIS. Following components in thi
 - Make sure you have installed the docker and docker-compose in your machine
 
 ## How to run the project
-- run the command "docker-compose up -d" in root directory
+- Run the command "docker-compose up -d" in root directory
