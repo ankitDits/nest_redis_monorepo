@@ -3,7 +3,7 @@
 Example code for nestjs microservice using REDIS
 
 > Looking for Microservices using redis?
-*** https://github.com/itsmebhavin/nestjs-microservices-gRPC-example
+*** https://github.com/itsmebhavin/nestjs-microservices-gRPC-example.git
 
 ## Description
 
@@ -21,3 +21,6 @@ I have created microservices using nestjs and REDIS. Following components in thi
 
 ## Prerequisite
 - Make sure you have installed the docker and docker-compose in your machine
+
+## How to run the project
+- run the command "docker-compose up -d" in root directory
